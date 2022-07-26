@@ -1,10 +1,7 @@
-import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import * as React from 'react';
 import {
     panelWrapperClass,
-    selectedTabClass,
-    tabClass,
     tabIndicatorClass,
     tabsClass,
 } from '../style/SimkPanel';
@@ -65,22 +62,6 @@ export class SimkPanel extends React.Component<IGitPanelState> {
                     indicator: tabIndicatorClass
                 }}
             >
-                <Tab
-                    classes={{
-                        root: tabClass,
-                        selected: selectedTabClass
-                    }}
-                    disableFocusRipple={true}
-                    disableRipple={true}
-                />
-                <Tab
-                    classes={{
-                        root: tabClass,
-                        selected: selectedTabClass
-                    }}
-                    disableFocusRipple={true}
-                    disableRipple={true}
-                />
             </Tabs>
         );
     }
