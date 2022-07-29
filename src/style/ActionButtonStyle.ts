@@ -10,6 +10,7 @@ export const actionButtonStyle = style({
     border: 'none',
     outline: 'none',
     cursor: 'pointer',
+    alignContent: 'right',
 
     $nest: {
         '&:active': {
