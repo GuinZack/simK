@@ -17,10 +17,7 @@ const DiffText = (props: { diff: React.ReactNode; }) => {
                  overflowX: "scroll",
                  fontSize: 10
              }}>
-            <Grid
-                className='diff'
-
-            >
+            <Grid className='diff'>
                 <CodeBlock
                     text={props.diff}
                     language={'python'}

@@ -62,7 +62,6 @@ export class SimkPanel extends React.Component<IGitPanelState> {
                 />
                 <DiffText
                     diff={this.diffFile}></DiffText>
-                {/*{this._renderTabs()}*/}
             </React.Fragment>
         );
     }
