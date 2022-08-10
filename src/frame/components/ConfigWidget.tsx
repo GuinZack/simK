@@ -6,13 +6,13 @@ import { ReactWidget } from '@jupyterlab/apputils';
 // import { Message } from '@lumino/messaging';
 // import { Widget } from '@lumino/widgets';
 import { StylesProvider } from '@material-ui/core/styles';
-import {WidgetStyle} from "../style/WidgetStyle";
-import { LoggerContext } from '../logger';
+import {WidgetStyle} from "../../style/WidgetStyle";
+import { LoggerContext } from '../../logger';
 import * as React from 'react';
 // import { ILogMessage, Level } from '../tokens';
-import { SimkPanel } from '../components/SimkPanel';
+import { ConfigPanel } from './ConfigPanel';
 
-export class SimKWidget extends ReactWidget {
+export class ConfigWidget extends ReactWidget {
     constructor( ) {
         super();
         this.addClass(WidgetStyle);
@@ -31,7 +31,7 @@ export class SimKWidget extends ReactWidget {
                 <LoggerContext.Consumer>
                     {logger => (
                         <React.Fragment>
-                            <SimkPanel
+                            <ConfigPanel
                              tab={0}/>
                             {/*<UseSignal*/}
                             {/*    signal={logger.signal}*/}

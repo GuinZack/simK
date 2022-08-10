@@ -1,10 +1,10 @@
 import { JupyterFrontEndPlugin } from '@jupyterlab/application';
-import sidebar from "./plugins/sidebar";
+import frame from "./plugins/frame";
 
 /**
  * Initialization data for the simK extension.
  */
-const plugins: JupyterFrontEndPlugin<any>[] = [ sidebar];
+const plugins: JupyterFrontEndPlugin<any>[] = [frame];
 
 export default plugins;
 

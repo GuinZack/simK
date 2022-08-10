@@ -1,7 +1,7 @@
 import { LabIcon } from '@jupyterlab/ui-components';
 import * as React from 'react';
 import { classes } from 'typestyle';
-import { actionButtonStyle } from '../style/ActionButtonStyle';
+import { actionButtonStyle } from '../../style/ActionButtonStyle';
 
 /**
  * Action button properties interface

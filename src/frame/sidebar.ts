@@ -3,8 +3,8 @@ import {
     JupyterFrontEnd,
     JupyterFrontEndPlugin
 } from '@jupyterlab/application';
-import { logoIcon } from '../style/icons';
-import { SimKWidget } from "../widgets/SimKWidget";
+import { sidebarIcon } from './style/icons';
+import { ConfigWidget } from "./components/ConfigWidget";
 import { ISettingRegistry } from "@jupyterlab/settingregistry";
 
 const sidebar: JupyterFrontEndPlugin<any> = {
@@ -15,11 +15,11 @@ const sidebar: JupyterFrontEndPlugin<any> = {
                      restorer: ILayoutRestorer) => {
         console.log('JupyterLab extension simK is activated!');
 
-        const simKPlugin = new SimKWidget(
+        const simKPlugin = new ConfigWidget(
             // settings
         );
         simKPlugin.id = 'jp-simK-sessions';
-        simKPlugin.title.icon = logoIcon;
+        simKPlugin.title.icon = sidebarIcon;
         simKPlugin.title.caption = 'simK';
 
         // restorer.add(simKPlugin, "simK-session");

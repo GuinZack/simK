@@ -9,10 +9,10 @@ import {
     panelWrapperClass,
     // tabIndicatorClass,
     // tabsClass,
-} from '../style/SimkPanel';
-import DiffText from './DiffText';
+} from '../../style/SimkPanel';
+import DiffText from '../../components/DiffText';
 import { ActionButton } from './ActionButton';
-import { toolbarButtonClass } from '../style/Toolbar';
+import { toolbarButtonClass } from '../../style/Toolbar';
 import { refreshIcon } from '@jupyterlab/ui-components';
 
 
@@ -26,7 +26,7 @@ export interface IGitPanelState {
 /**
  * React component for rendering a panel for performing Git operations.
  */
-export class SimkPanel extends React.Component<IGitPanelState> {
+export class ConfigPanel extends React.Component<IGitPanelState> {
     render(): React.ReactElement {
         return (
             <div className={panelWrapperClass}>
